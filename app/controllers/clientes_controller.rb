@@ -4,7 +4,13 @@ class ClientesController < ApplicationController
   # GET /clientes
   # GET /clientes.json
   def index
-    @clientes = Cliente.all
+    page = params[:pagina].to_i
+    page = 1 if page < 1
+
+    limit = 10
+    offset = (page - 1) * limit
+
+    @clientes = Cliente.all.offset(offset).limit(limit)
   end
 
   # GET /clientes/1
