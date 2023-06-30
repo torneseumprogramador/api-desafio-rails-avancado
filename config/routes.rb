@@ -13,6 +13,8 @@ Rails.application.routes.draw do
     get "/clientes/:id", to: "clientes#show"
     delete "/clientes/:id", to: "clientes#destroy"
     put "/clientes/:id", to: "clientes#update"
+
+    post "/administradores/login", to: "administradores#login"
   end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

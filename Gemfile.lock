@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/torneseumprogramador/desafio_de_rails_avancado_gem.git
+  revision: eb38420c9ce98c9f272977b76d02b2da40dc246c
+  specs:
+    desafio_de_rails_avancado (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -66,6 +72,7 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    bcrypt (3.1.19)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
@@ -88,6 +95,7 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    jwt (2.7.1)
     loofah (2.21.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -163,10 +171,13 @@ PLATFORMS
   x86_64-darwin-20
 
 DEPENDENCIES
+  bcrypt
   bootsnap
   debug
+  desafio_de_rails_avancado!
   faker
   jbuilder
+  jwt
   mysql2 (~> 0.5)
   puma (~> 5.0)
   rails (~> 7.0.5)

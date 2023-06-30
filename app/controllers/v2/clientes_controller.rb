@@ -1,5 +1,5 @@
 module V2
-  class ClientesController < ApplicationController
+  class ClientesController < AuthenticationController
     before_action :set_cliente, only: %i[ show update destroy ]
 
     # GET /clientes

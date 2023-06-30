@@ -25,7 +25,7 @@ module V1
       @cliente = Cliente.new(cliente_params)
 
       if @cliente.save
-        render :show, status: :created, location: @cliente
+        render :show, status: :created
       else
         render json: @cliente.errors, status: :unprocessable_entity
       end
@@ -35,7 +35,7 @@ module V1
     # PATCH/PUT /clientes/1.json
     def update
       if @cliente.update(cliente_params)
-        render :show, status: :ok, location: @cliente
+        render :show, status: :ok
       else
         render json: @cliente.errors, status: :unprocessable_entity
       end

@@ -32,6 +32,12 @@ gem "bootsnap", require: false
 
 gem "faker"
 
+gem 'desafio_de_rails_avancado', git: 'https://github.com/torneseumprogramador/desafio_de_rails_avancado_gem.git'
+
+gem 'jwt'
+
+gem 'bcrypt'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 

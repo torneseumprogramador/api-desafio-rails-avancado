@@ -14,3 +14,5 @@
   )
 end
 
+
+Administrador.create!(nome: "Danilo", email: "danilo@teste.com", senha: "FDesas24R2a!ils%")

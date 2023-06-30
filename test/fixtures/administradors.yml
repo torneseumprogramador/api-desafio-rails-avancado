@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: Danilo
+  email: danilo@teste.com
+  senha: "$2a$12$UsjG0b1tWuBox5UnKE641uvjvjPw2p6U4G6GUriTHhWUvDOkLpsLO"
+
+two:
+  nome: MyString
+  email: MyString
+  senha: MyString
